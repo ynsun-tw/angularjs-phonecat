@@ -1,3 +1,3 @@
 'use strict';
 
-angular.module('todoListApp', ['todoList']);
+angular.module('todoListApp', ['ngRoute', 'todoList', 'todoDetail']);

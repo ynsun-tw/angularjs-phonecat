@@ -1,5 +1,25 @@
-<ul>
-    <li ng-repeat="todo in $ctrl.todos">
-        <p>{{todo.name}}</p>
-    </li>
-</ul>
+<div class="container-fluid">
+    <h1>To Do List</h1>
+    <div class="row">
+        <div class="col-md-2">
+            <div class="operation">
+                <input ng-model="$ctrl.search" placeholder="search"/>
+            </div>
+            <input ng-model="$ctrl.newTodoItem" placeholder="Add to do"/>
+            <button ng-click="$ctrl.addTodo()">Add</button>
+        </div>
+        <div class="col-md-10">
+
+            <ul class="phones">
+                <li ng-repeat="todo in $ctrl.todos | filter:$ctrl.search">
+                    <label>
+                        <input type="checkbox" ng-model="todo.checked">
+                        <span ng-class="{checked: todo.checked}" class="todo-item">{{todo.name}}</span>
+                    </label>
+                    <a ng-href="/#!/todo/{{todo.name}}">view</a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</div>

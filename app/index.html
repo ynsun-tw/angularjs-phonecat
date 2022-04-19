@@ -2,16 +2,21 @@
 <html lang="en" ng-app="todoListApp">
   <head>
     <meta charset="utf-8">
-    <title>My HTML File</title>
+    <title>Todo</title>
     <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="app.css" />
     <script src="lib/angular/angular.js"></script>
+    <script src="lib/angular-route/angular-route.js"></script>
     <script src="app.module.js"></script>
+    <script src="app.config.js"></script>
     <script src="todo-list/todoList.module.js"></script>
+    <script src="todo-detail/todo-detail.module.js"></script>
     <script src="todo-list/todo-list.component.js"></script>
+    <script src="todo-detail/todo-detail.component.js"></script>
   </head>
   <body>
 
-  <todo-list></todo-list>
+  <div ng-view></div>
 
   </body>
 </html>

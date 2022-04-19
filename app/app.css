@@ -1,0 +1,11 @@
+.todo-item.checked {
+	text-decoration: line-through;
+}
+
+ul li {
+	list-style: none;
+}
+
+.operation {
+	margin-bottom: 10px;
+}
