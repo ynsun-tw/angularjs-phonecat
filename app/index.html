@@ -1,14 +1,17 @@
 <!doctype html>
-<html lang="en" ng-app>
+<html lang="en" ng-app="todoListApp">
   <head>
     <meta charset="utf-8">
     <title>My HTML File</title>
     <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css" />
     <script src="lib/angular/angular.js"></script>
+    <script src="app.module.js"></script>
+    <script src="todo-list/todoList.module.js"></script>
+    <script src="todo-list/todo-list.component.js"></script>
   </head>
   <body>
 
-    <p>Nothing here {{'yet' + '!'}}</p>
+  <todo-list></todo-list>
 
   </body>
 </html>
